@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/coffee_cream"
+    android:padding="24dp">
+
+    <!-- Header Illustration -->
+    <View
+        android:id="@+id/viewRegHero"
+        android:layout_width="0dp"
+        android:layout_height="140dp"
+        android:background="@drawable/bg_promo_banner"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="✨🥐"
+        android:textSize="36sp"
+        app:layout_constraintBottom_toBottomOf="@id/viewRegHero"
+        app:layout_constraintEnd_toEndOf="@id/viewRegHero"
+        app:layout_constraintStart_toStartOf="@id/viewRegHero"
+        app:layout_constraintTop_toTopOf="@id/viewRegHero" />
+
+    <!-- Register Form Card -->
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/bg_card_container"
+        android:elevation="4dp"
+        android:orientation="vertical"
+        android:padding="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/viewRegHero">
+
+        <!-- Title -->
+        <TextView
+            android:id="@+id/tvRegisterTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Register"
+            android:textColor="@color/coffee_text_primary"
+            android:textSize="24sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="2dp"
+            android:text="Create your new account"
+            android:textColor="@color/coffee_text_secondary"
+            android:textSize="13sp" />
+
+        <!-- Full Name Input -->
+        <EditText
+            android:id="@+id/etRegisterName"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:layout_marginTop="16dp"
+            android:autofillHints="name"
+            android:background="@drawable/bg_edit_text"
+            android:hint="nama lengkap"
+            android:inputType="textPersonName"
+            android:paddingHorizontal="16dp"
+            android:textColor="@color/coffee_text_primary"
+            android:textColorHint="@color/coffee_hint"
+            android:textSize="15sp" />
+
+        <!-- Username Input -->
+        <EditText
+            android:id="@+id/etRegisterUsername"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:layout_marginTop="12dp"
+            android:autofillHints="username"
+            android:background="@drawable/bg_edit_text"
+            android:hint="username"
+            android:inputType="text"
+            android:paddingHorizontal="16dp"
+            android:textColor="@color/coffee_text_primary"
+            android:textColorHint="@color/coffee_hint"
+            android:textSize="15sp" />
+
+        <!-- Password Input -->
+        <EditText
+            android:id="@+id/etRegisterPassword"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:layout_marginTop="12dp"
+            android:autofillHints="password"
+            android:background="@drawable/bg_edit_text"
+            android:hint="password"
+            android:inputType="textPassword"
+            android:paddingHorizontal="16dp"
+            android:textColor="@color/coffee_text_primary"
+            android:textColorHint="@color/coffee_hint"
+            android:textSize="15sp" />
+
+    </LinearLayout>
+
+    <!-- Register Button -->
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btnRegisterSubmit"
+        android:layout_width="0dp"
+        android:layout_height="54dp"
+        android:layout_marginBottom="28dp"
+        android:background="@drawable/bg_button_dark"
+        android:text="Register"
+        android:textAllCaps="false"
+        android:textColor="#FFFFFF"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

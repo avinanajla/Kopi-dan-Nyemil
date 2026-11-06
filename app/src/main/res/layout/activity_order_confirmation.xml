@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/coffee_cream"
+    android:padding="28dp">
+
+    <!-- Greeting -->
+    <TextView
+        android:id="@+id/tvConfirmGreeting"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="28dp"
+        android:text="Halo Nama,"
+        android:textColor="@color/coffee_text_primary"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <!-- Confirmation Card Container -->
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:background="@drawable/bg_card_container"
+        android:elevation="6dp"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:padding="32dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tvConfirmGreeting">
+
+        <!-- Success Badge / Circle -->
+        <View
+            android:id="@+id/viewSuccessCircle"
+            android:layout_width="96dp"
+            android:layout_height="96dp"
+            android:background="@drawable/bg_green_circle" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="-64dp"
+            android:text="✓"
+            android:textColor="#27AE60"
+            android:textSize="48sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40dp"
+            android:text="Order Confirmed!"
+            android:textColor="@color/coffee_text_primary"
+            android:textSize="22sp"
+            android:textStyle="bold" />
+
+        <!-- Confirmation Message -->
+        <TextView
+            android:id="@+id/tvConfirmMessage"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:gravity="center"
+            android:lineSpacingExtra="6dp"
+            android:text="Terima kasih sudah memesan tunggu aja sebentar kurir kami segera mengantarkan pesananmu!"
+            android:textColor="@color/coffee_text_secondary"
+            android:textSize="15sp" />
+
+    </LinearLayout>
+
+    <!-- OK Button -->
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btnConfirmOk"
+        android:layout_width="0dp"
+        android:layout_height="56dp"
+        android:layout_marginBottom="48dp"
+        android:background="@drawable/bg_button_dark"
+        android:text="Oke"
+        android:textAllCaps="false"
+        android:textColor="#FFFFFF"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+
+    <!-- Modern Coffee Shop Palette -->
+    <color name="coffee_dark">#2C1E14</color>
+    <color name="coffee_brown">#4A2E1B</color>
+    <color name="coffee_accent">#D9822B</color>
+    <color name="coffee_cream">#F9F6F0</color>
+    <color name="coffee_card_bg">#FFFFFF</color>
+    <color name="coffee_text_primary">#2C221E</color>
+    <color name="coffee_text_secondary">#7A6E65</color>
+    <color name="coffee_stroke">#E6DFD5</color>
+    <color name="coffee_hint">#A89B90</color>
+</resources>

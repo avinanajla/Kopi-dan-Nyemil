@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/coffee_cream"
+    android:padding="24dp">
+
+    <!-- Location Banner Illustration -->
+    <View
+        android:id="@+id/viewAddressBanner"
+        android:layout_width="0dp"
+        android:layout_height="120dp"
+        android:background="@drawable/bg_promo_banner"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="📍"
+        android:textSize="36sp"
+        app:layout_constraintBottom_toBottomOf="@id/viewAddressBanner"
+        app:layout_constraintEnd_toEndOf="@id/viewAddressBanner"
+        app:layout_constraintStart_toStartOf="@id/viewAddressBanner"
+        app:layout_constraintTop_toTopOf="@id/viewAddressBanner" />
+
+    <!-- Form Card Container -->
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/bg_card_container"
+        android:elevation="4dp"
+        android:orientation="vertical"
+        android:padding="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/viewAddressBanner">
+
+        <!-- Title -->
+        <TextView
+            android:id="@+id/tvAddressTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Alamat Pengiriman"
+            android:textColor="@color/coffee_text_primary"
+            android:textSize="22sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="2dp"
+            android:text="Please provide your delivery destination"
+            android:textColor="@color/coffee_text_secondary"
+            android:textSize="13sp" />
+
+        <!-- Full Name Input -->
+        <EditText
+            android:id="@+id/etAddressName"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:layout_marginTop="16dp"
+            android:autofillHints="name"
+            android:background="@drawable/bg_edit_text"
+            android:hint="Nama Lengkap"
+            android:inputType="textPersonName"
+            android:paddingHorizontal="16dp"
+            android:textColor="@color/coffee_text_primary"
+            android:textColorHint="@color/coffee_hint"
+            android:textSize="15sp" />
+
+        <!-- Address Input -->
+        <EditText
+            android:id="@+id/etAddressDetail"
+            android:layout_width="match_parent"
+            android:layout_height="90dp"
+            android:layout_marginTop="12dp"
+            android:autofillHints="postalAddress"
+            android:background="@drawable/bg_edit_text"
+            android:gravity="top|start"
+            android:hint="Alamat"
+            android:inputType="textMultiLine"
+            android:padding="14dp"
+            android:textColor="@color/coffee_text_primary"
+            android:textColorHint="@color/coffee_hint"
+            android:textSize="15sp" />
+
+        <!-- Landmark / Detailed Notes Input -->
+        <EditText
+            android:id="@+id/etAddressNotes"
+            android:layout_width="match_parent"
+            android:layout_height="90dp"
+            android:layout_marginTop="12dp"
+            android:autofillHints="name"
+            android:background="@drawable/bg_edit_text"
+            android:gravity="top|start"
+            android:hint="Patokan atau detail lengkap"
+            android:inputType="textMultiLine"
+            android:padding="14dp"
+            android:textColor="@color/coffee_text_primary"
+            android:textColorHint="@color/coffee_hint"
+            android:textSize="15sp" />
+
+    </LinearLayout>
+
+    <!-- Order and Send Button -->
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btnOrderAndSend"
+        android:layout_width="0dp"
+        android:layout_height="54dp"
+        android:layout_marginBottom="28dp"
+        android:background="@drawable/bg_button_dark"
+        android:text="Order dan Kirim"
+        android:textAllCaps="false"
+        android:textColor="#FFFFFF"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
